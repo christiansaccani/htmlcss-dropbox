@@ -110,8 +110,8 @@ main {
     margin: 150px auto 0;
 }
 
-h2 {
-    font-size: 50px;
+#main-container > h2 {
+    font-size: 40px;
     font-weight: 600;
 
     padding-bottom: 50px;
@@ -173,6 +173,20 @@ label:first-of-type {
     padding: 50px;
 }
 
+#text-partner > h3 {
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 15px;
+}
+
+#text-partner > p {
+    font-size: 17px;
+    font-weight: 400;
+
+    padding-bottom: 30px;
+}
+
 /* --------------------------------------------- */
 
 #businnes-info {
@@ -220,4 +234,13 @@ label:first-of-type {
 .single-businnes-info > p {
     font-size: 17px;
     font-weight: 400;
+}
+
+/* --------------------------------------------- */
+
+#clients-info > h2 {
+    font-size: 40px;
+    font-weight: 600;
+
+    padding-bottom: 70px;
 }
