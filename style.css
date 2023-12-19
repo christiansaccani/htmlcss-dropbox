@@ -247,6 +247,33 @@ label:first-of-type {
 
 /* --------------------------------------------- */
 
+#client-info {
+    display: flex;
+
+    margin-top: 150px;
+
+    height: 32vw;
+    background-color: red;
+}   
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    background-color: yellow;
+}
+
+.single-client {
+    width: 50%;
+    border: 1px solid black;
+}
+
+#visual-client {
+    flex-grow: 1;
+}
+/* --------------------------------------------- */
+
 #trial-bng {
     background-color: #b4d0e7;
 }
