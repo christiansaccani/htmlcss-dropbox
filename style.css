@@ -11,6 +11,7 @@ nav {
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 10;
 
     height: 80px;
     width: 100%;
@@ -356,6 +357,10 @@ footer {
 #footer-container {
     display: flex;
     justify-content: center;
+    
+    width: 1000px;
+    margin: 0 auto;
+
     gap: 100px;
 
     padding: 100px 0 110px;
@@ -388,3 +393,34 @@ footer {
 }
 
 /* --------------------------------------------- */
+
+hr {
+    border: 1px solid white;
+    width: 120px;
+
+    margin-bottom: 50px;
+    margin-left: 360px;
+}
+
+#lang {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    
+    gap: 10px;
+
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    color: grey;
+}
+
+#lang > button {
+    border: none;
+    background: none;
+}
+
+#lang i {
+    color: grey;
+}
