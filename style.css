@@ -238,9 +238,36 @@ label:first-of-type {
 
 /* --------------------------------------------- */
 
-#clients-info > h2 {
+#clients-info-intro > h2 {
     font-size: 40px;
     font-weight: 600;
 
     padding-bottom: 70px;
 }
+
+/* --------------------------------------------- */
+
+#trial-bng {
+    background-color: #b4d0e7;
+}
+
+#trial {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    margin: 0 auto;
+
+    max-width: 1000px;
+    width: 100%;
+    padding: 130px 0;
+}
+
+#trial > h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+    color: #61082b;
+}
+
+/* --------------------------------------------- */
