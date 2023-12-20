@@ -339,15 +339,15 @@ label:first-of-type {
 
 #partner-sec {
     display: flex;
-
-    border: 1px solid black;
-    height: auto;
-
     margin-bottom: 160px;
 }
 
+#image-partner img {
+    height: 500px;
+}
+
 #text-partner {
-    padding: 50px;
+    padding: 70px 50px
 }
 
 #text-partner > h3 {
@@ -358,10 +358,22 @@ label:first-of-type {
 }
 
 #text-partner > p {
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
 
     padding-bottom: 30px;
+}
+
+#text-partner > a {
+    display: inline-block;
+    text-align: center;
+
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
 }
 
 /* --------------------------------------------- */
