@@ -49,15 +49,18 @@ nav {
 
 header {
     background-color: #b4d0e7;
-    margin-top: 80px
+    padding-top: 80px
 }
 
 #header-container {
-    height: 740px;
-    width: 1200px;
+    position: relative;
+    bottom: -80px;
+    /* height: 740px; */
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #header-column {
@@ -67,7 +70,7 @@ header {
 }
 
 h1 {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 50px;
 
     font-size: 80px;
@@ -78,24 +81,28 @@ h1 {
     display: flex;
     flex-direction: row;
 
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
 }
 
 #header-row #testo-header {
     height: 372px;
-    width: calc(100% / 3);
+    width: calc(100% - 800px);
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #header-row #img-header {
-    position: relative;
+    /* position: relative; */
 
-    border: 1px solid black;
+    width: 800px;
+    /* border: 1px solid black; */
 }
 
 #img-header img {
-    position: absolute;
+    width: 800px;
+
+    /* position: absolute; */
 }
 
 /* FINE HEADER */
@@ -107,7 +114,8 @@ main {
 }
 
 #main-container {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 150px auto 0;
 }
 
@@ -140,9 +148,8 @@ label:first-of-type {
 }
 
 .vertical-plan {
-    max-width: 300px;
-    width: 100%;
-    height: 950px;
+    width: calc(100% / 3 - 50px / 3 * 2);
+    min-height: 200px;
 
     margin-bottom: 50px;
 
@@ -207,14 +214,15 @@ label:first-of-type {
     flex-wrap: wrap;
 
     row-gap: 70px;
+
+    border: 1px solid black;
 }
 
 .single-businnes-info {
     display: flex;
     flex-direction: column;
 
-    max-width: 320px;
-    width: 100%;
+    width: calc(100% / 3 - 36px / 3 * 2);
     height: 500px;
 
     background-color: blue;
@@ -253,25 +261,28 @@ label:first-of-type {
 
     margin-top: 150px;
 
-    height: 32vw;
     background-color: red;
 }   
 
 .block {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
+    
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
 
     background-color: yellow;
 }
 
 .single-client {
     width: 50%;
+    height: 50%;
     border: 1px solid black;
 }
 
 #visual-client {
-    flex-grow: 1;
+    width: calc(100vw / 3);
+    /* flex-grow: 1; */
 }
 /* --------------------------------------------- */
 
@@ -358,7 +369,8 @@ footer {
     display: flex;
     justify-content: center;
     
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
 
     gap: 100px;
@@ -394,12 +406,17 @@ footer {
 
 /* --------------------------------------------- */
 
+#last-footer-section {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 hr {
     border: 1px solid white;
     width: 120px;
 
     margin-bottom: 50px;
-    margin-left: 360px;
 }
 
 #lang {
@@ -409,7 +426,8 @@ hr {
     
     gap: 10px;
 
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 50px;
 
