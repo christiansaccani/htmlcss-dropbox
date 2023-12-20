@@ -99,6 +99,25 @@ h1 {
     /* border: 1px solid black; */
 }
 
+#header-row #testo-header p {
+    word-spacing: 1.5px;
+    line-height: 1.3em;
+}
+
+#testo-header > a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #0061ff;
+    padding: 10px 15px;
+    margin: 35px 0;
+}
+
+#testo-header > i {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
 #header-row #img-header {
     /* position: relative; */
 
