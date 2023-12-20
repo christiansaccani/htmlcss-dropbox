@@ -169,18 +169,129 @@ label:first-of-type {
     align-items: stretch;
 
     margin-bottom: 150px;
-
-    border: 1px solid black;
 }
 
 .vertical-plan {
+    display: flex;
+    flex-direction: column;
+
     width: calc(100% / 3 - 50px / 3 * 2);
-    min-height: 200px;
 
     margin-bottom: 50px;
 
-    background-color: blue;
-    border: 1px solid black;
+    border: 1px solid #d0d0d3;
+}
+
+.vertical-plan .client-amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    font-size: 15px;
+    
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.vertical-plan .package-info {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 35px 30px 45px;
+}
+
+.package-info > h3 {
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 25px;
+}
+
+.package-info > .price {
+    font-size: 15px;
+    font-weight: 600;
+
+    padding-bottom: 15px;
+}
+
+.package-info > .frequency {
+    color: grey;
+    font-size: 15px;
+    font-weight: 400;
+
+    padding-bottom: 50px;
+}
+
+.package-info > .package-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    padding-bottom: 50px;
+}
+
+.package-description > p {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+
+    font-size: 14px;
+}
+
+.package-info > a {
+    display: inline-block;
+    text-align: center;
+
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    background-color: #0061ff;
+    padding: 15px 0px;
+    margin-bottom: 35px;
+}
+
+.package-info > p {
+    font-size: 14px;
+
+    padding-bottom: 40px;
+}
+
+.package-info > hr {
+    border: 1px solid grey;
+    width: 50px;
+
+    margin-bottom: 50px;
+}
+
+.package-info > figcaption {
+    font-size: 15px;
+    font-weight: 600;
+
+    padding-bottom: 30px;
+}
+
+.package-info > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.package-info li {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.package-info li::before {
+    content: "\2714";
+    color: #0061ff;
+    font-weight: 600;
 }
 
 #last-plan {
