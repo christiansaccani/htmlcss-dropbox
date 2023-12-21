@@ -62,10 +62,14 @@
         <div id="main-container">
             <h2>Trova il piano businness che fa per te</h2>
             <form>
-                <input type="radio" id="mensile" name="Fatturazione" value="Fatturazione Mensile">
-                <label for="html">Fatturazione Mensile</label>
-                <input type="radio" id="annuale" name="Fatturazione" value="Fatturazione Annuale">
-                <label for="css">Fatturazione Annuale</label>
+                <div class="radio">
+                    <input type="radio" id="Month" name="Fatturazione" value="Fatturazione Mensile" checked>
+                    <label class="radio-label" for="html">Fatturazione Mensile</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="Year" name="Fatturazione" value="Fatturazione Annuale" disabled>
+                    <label class="radio-label" for="css">Fatturazione Annuale</label>
+                </div>
             </form>
 
             <section id="businnes-plan">
@@ -318,8 +322,7 @@
                 <a href="#">Inizia la tua prova gratuita</a>
             </section>
         </div>
-        <div id="faq-bng">
-            
+        <div id="faq-bng">          
             <section id="faq">
                 <h2>Domande Frequenti</h2>
                 <div class="faq-question">
