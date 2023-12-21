@@ -44,6 +44,8 @@ nav {
 
     text-decoration: none;
     color: black;
+
+    transition: 0.1s linear;
 }
 
 .nav-element#begin {
@@ -458,7 +460,7 @@ label:first-of-type {
     justify-content: center;
     align-items: center;
 
-    border: 1px solid black;
+    transition: 0.5s linear;
 }
 
 .single-client img {
@@ -473,8 +475,11 @@ label:first-of-type {
     gap: 40px;
 
     width: calc(100vw / 3);
+    max-height: calc(100vw / 3);
     /* flex-grow: 1; */
     padding: 50px;
+
+    overflow-y: auto;
 
     background-color: #f5f5f5;
 }
@@ -651,3 +656,39 @@ hr {
 #lang i {
     color: grey;
 }
+
+/* ---  HOVER RULES  --- */
+
+.block.one .single-client:first-of-type:hover {
+    border: 15px solid #bee0ba;
+}
+
+.block.one .single-client:nth-of-type(2):hover {
+    border: 15px solid #aa2259;
+}
+
+.block.one .single-client:nth-of-type(3):hover {
+    border: 15px solid #3abef3;
+}
+
+.block.one .single-client:nth-of-type(4):hover {
+    border: 15px solid #ff6060;
+}
+
+.block.two .single-client:first-of-type:hover {
+    border: 15px solid #ec304c;
+}
+
+.block.two .single-client:nth-of-type(2):hover {
+    border: 15px solid #deecf7;
+}
+
+.block.two .single-client:nth-of-type(3):hover {
+    border: 15px solid #334aa5;
+}
+
+.block.two .single-client:nth-of-type(4):hover {
+    border: 15px solid #ffea8a;
+}
+
+/* ---------------- */
