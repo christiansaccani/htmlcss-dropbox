@@ -587,30 +587,58 @@ input[type="radio"]:checked {
 }
 
 .faq-question {
+    position: relative;
 
     padding: 40px 0;
     border-top: 1px solid grey;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .faq-question:last-of-type {
     border-bottom: 1px solid grey;
 }
 
-.faq-question > p {
+.question > p {
     font-weight: 700;
 }
 
-.faq-question > button {
+.question > button {
     font-weight: 700;
 
     padding-right: 40px;
+    padding-left: 40px;
     border: none;
     background: none;
 }
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.answer {
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 40px;
+    padding-right: 100px;
+}
+
+.faq-question:hover .answer {
+    position: relative;
+    opacity: 1;
+
+    transition: all 0.5s linear;
+}
+
+.faq-question:hover .fa-angle-down {
+    transform: rotate(180deg);
+}
+
 
 /* --------------------------------------------- */
 
