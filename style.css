@@ -41,6 +41,7 @@ nav {
 
     padding: 0 20px;
     font-size: 15px;
+    margin: 0 2px;
 
     text-decoration: none;
     color: black;
@@ -52,6 +53,8 @@ nav {
     color: white;
     background-color: #0061ff;
     padding: 10px;
+
+    transition: 0.5s;
 }
 /* FINE NAV */
 
@@ -114,6 +117,8 @@ h1 {
     background-color: #0061ff;
     padding: 10px 15px;
     margin: 35px 0;
+
+    transition: 0.5s;
 }
 
 #testo-header > i {
@@ -293,6 +298,8 @@ input[type="radio"]:checked {
     background-color: #0061ff;
     padding: 10px 0px;
     margin-bottom: 35px;
+
+    transition: 0.5s;
 }
 
 .package-info > p {
@@ -367,6 +374,8 @@ input[type="radio"]:checked {
     text-decoration: none;
     background-color: #0061ff;
     padding: 10px 40px;
+
+    transition: 0.5s;
 }
 
 #column-last-plan > .price {
@@ -473,6 +482,10 @@ input[type="radio"]:checked {
     font-weight: 600;
 
     padding-bottom: 70px;
+}
+
+#clients-info-intro > a {
+    color: #0061ff;
 }
 
 /* --------------------------------------------- */
@@ -639,7 +652,6 @@ input[type="radio"]:checked {
     transform: rotate(180deg);
 }
 
-
 /* --------------------------------------------- */
 
 footer {
@@ -648,13 +660,11 @@ footer {
 
 #footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-
-    gap: 100px;
 
     padding: 100px 0 110px;
 }
@@ -675,6 +685,7 @@ footer {
 }
 
 .footer-col li {
+    font-size: 15px;
     margin-top: 20px;
 }
 
@@ -724,7 +735,20 @@ hr {
     color: grey;
 }
 
-/* ---  HOVER RULES  --- */
+/* --------------------------------------------- */
+
+/* ---  HOVER RULE HEADER  --- */
+
+.nav-element.blue:hover {
+    border-bottom: #3180ff 5px solid;
+    border-radius: 15%;
+}
+
+/* ---  HOVER RULES CLIENTS --- */
+
+#clients-info-intro:hover a {
+    color: #3180ff;
+}
 
 .block.one .single-client:first-of-type:hover {
     border: 15px solid #bee0ba;
@@ -735,7 +759,7 @@ hr {
 }
 
 .block.one .single-client:nth-of-type(3):hover {
-    border: 15px solid #3abef3;
+    border: 15px solid #00b7ff;
 }
 
 .block.one .single-client:nth-of-type(4):hover {
@@ -758,5 +782,32 @@ hr {
     border: 15px solid #ffea8a;
 }
 
-/* ---  DROP DOWN MENU FAQ  --- */
+/* ---  HOVER RULE BUTTONS  --- */
 
+#begin:hover {
+    background-color: #3180ff;
+}
+
+#testo-header > a:hover {
+    background-color: #3180ff;
+}
+
+.package-info > a:hover {
+    background-color: #3180ff;
+}
+
+#row-last-plan > a:hover {
+    background-color: #3180ff;
+}
+
+#text-partner > a:hover {
+    background-color: #d0d0d3;
+    color: white;
+    border: #d0d0d3;
+}
+
+/* ---  HOVER RULE FOOTER  --- */
+
+.footer-col ul li a:hover {
+    color: #0061ff;
+}
